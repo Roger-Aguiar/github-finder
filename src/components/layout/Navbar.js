@@ -12,7 +12,7 @@ const Navbar = (props) =>
 
             <ul>
                 <li>
-                    <Link to = '/'>Home</Link>
+                    <Link to = '/github-finder'>Home</Link>
                 </li>
 
                 <li>
