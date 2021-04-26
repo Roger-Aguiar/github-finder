@@ -31,7 +31,7 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match}) =>
 
     return (
         <Fragment>
-            <Link to = '/' className = 'btn btn-light'>Back to Search</Link>
+            <Link to = '/github-finder' className = 'btn btn-light'>Back to Search</Link>
             Hireable: {''}
 
             {hireable ? <i className = 'fas fas-check text-success' /> : <i className = 'fas fa-times-circle text-danger' /> }
