@@ -88,7 +88,7 @@ class App extends Component
 
             <Switch>
               <Route 
-                exact path = '/' 
+                exact path = '/github-finder' 
                 render = {props => (
                   <Fragment>
 
