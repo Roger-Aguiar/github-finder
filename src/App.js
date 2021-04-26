@@ -24,16 +24,15 @@ class App extends Component
   async componentDidMount()
   {    
     this.setState({loading: true});
-
+    
     const res = axios.get(`https://api.github.com/users?client_id=
                           ${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=
-                          ${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
+                          ${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);    
 
     this.setState({ users: (await res).data, loading: false});
-
-    //console.log((await res).data);
   }
 
+  
   searchUsers = async text => 
   {
     this.setState({loading: true});
@@ -76,14 +75,14 @@ class App extends Component
   }
 
   render()
-  { 
+  {     
     const { users, user, repos, loading } = this.state;    
     return (
       <Router>
         <div className="App"> 
 
           <Navbar></Navbar>  
-              
+          
           <div className = "container">
             <Alert alert = {this.state.alert} />
 
